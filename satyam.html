@@ -1,0 +1,166 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.btn-group .button {
+  background-color: #4CAF50; /* Green */
+  border: 3px solid green;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 230px;
+  display: block;
+}
+
+.btn-group .button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: Red;
+}
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color:transparent;
+  margin-top: 20px;
+display:none;
+}
+#footer {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color:transparent;
+  margin-top: 200px;
+}
+#toBeZoomedOut{
+   background-color:#A52A2A;
+   width:100%;
+height:60px;
+}
+table th,td{
+border:1px solid red;
+color:white;
+}
+h1 a :hover{
+color:#00ff00;
+}
+h2{
+color:FF00FF;
+}
+h2:hover{
+color:blue;
+}
+</style>
+</head>
+<body>
+<div style="background-image: url('https://i.ytimg.com/vi/KuDn-EWuZew/maxresdefault.jpg'); height:100%;width:100%">
+<div id="toBeZoomedOut">
+<h1><a style="color:yellow"><center>Welcome to IRCTC Train Ticket Booking</center></a></h1><br>
+<h2><center>Satyam (19BCA0041)</center></h2><br><br>
+</div>
+<div class="btn-group">
+<button class="button">Home</button>
+
+<button onclick="myFunction()" class="button">View Passengers Chart</button>
+  <button class="button"><a href="contact.html">Contacts</a></button>
+  <button class="button">About</button>
+  <button class="button"><a href="index.html">Click here to book Train Tickets</a></button>
+
+</div>
+
+<div id="myDIV">
+<table style="width:100%;border:1px solid red;">
+  <tr>
+    <th>Name</th>
+<th>Age</th>
+<th >Gender</th>
+<th>Train No</th>
+<th>Train Name</th>
+<th>Class of Travel</th>
+<th>PNR No</th>
+<th>Passenger Mobile No</th>
+<th>Source</th>
+<th>Boarding Date and Time</th>
+<th>Destination</th>
+<th>Arrival Date and Time</th>
+<th>Distance</th>
+<th>Amount</th>
+
+  </tr>
+  <tr>
+    <td>JILL</td>
+    <td>45</td>
+    <td>M</td>
+    <td>98765</td>
+    <td>Sangmitra Express</td>
+    <td>AC</td>
+    <td>123456789</td>
+    <td>9993322111</td>
+    <td>Patna</td>
+    <td>16/09/2000</td>
+    <td>Delhi</td>
+    <td>17/09/2020</td>
+    <td>1232</td>
+    <td>2000</td>
+  </tr>
+  <tr>
+    <td>PUMMY</td>
+    <td>45</td>
+    <td>F</td>
+    <td>98764</td>
+    <td>DOON Express</td>
+    <td>AC</td>
+    <td>123456789</td>
+    <td>9993322333</td>
+    <td>Banaras</td>
+    <td>25/10/2020</td>
+    <td>Jaipur</td>
+    <td>26/10/2020</td>
+    <td>1345</td>
+    <td>2045</td>
+  </tr>
+  <tr>
+    <td>TOMMY</td>
+    <td>70</td>
+    <td>M</td>
+    <td>98763</td>
+    <td>Sialdah Express</td>
+    <td>SL</td>
+    <td>123456789</td>
+    <td>9993335555</td>
+    <td>Howrah Junction</td>
+    <td>26/10/2020</td>
+    <td>Guwhati </td>
+    <td>28/10/2020</td>
+    <td>11786</td>
+    <td>3090</td>>
+  </tr>
+  
+  
+  
+</table>
+
+</div>
+<div id="footer">
+<p><b>Copyright @ Satyam & Manish.com</b> </p>
+</div>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+</script>
+
+</body>
+</html>
